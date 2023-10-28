@@ -1,3 +1,8 @@
+<footer>
+
+    @include('partials.footer_top')
+
+    {{-- @include('partials.footer_bottom') --}}
 
 
-{{-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi temporibus excepturi iure. Inventore voluptas odio aliquam culpa, nostrum, eligendi nobis ex iure magnam dolorem blanditiis sint minus facilis possimus excepturi!</p> --}}
+</footer>

@@ -1,0 +1,26 @@
+.f_container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $secondary-color;
+    /* height: 200px; */
+}
+
+.box {
+    width: 500px;
+    height: 360px;
+    overflow: hidden;
+}
+.box > img {
+    height: 500px;
+    width: 500px;
+    margin-top: -85px;
+}
+
+h3 {
+    color: #ffffff;
+}
+
+div, a{
+    text-decoration: none;
+    color: gray;
+}
