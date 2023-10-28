@@ -1,3 +1,4 @@
+{{-- @extends('layouts.app') --}}
 
 <section class="jumbotron">
     
@@ -5,7 +6,17 @@
     
         <div class="row row-cols-6">
     
+            @foreach ($comics as $category => $list)
+                <h1>{{$category}}</h1>
+            @endforeach
+
             <div class="col">
+                <div class="card-img">
+                    <img class="p-3" src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="">
+                </div>
+            </div>
+    
+            {{-- <div class="col">
                 <div class="card-img">
                     <img class="p-3" src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="">
                 </div>
@@ -69,13 +80,7 @@
                 <div class="card-img">
                     <img class="p-3" src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="">
                 </div>
-            </div>
-    
-            <div class="col">
-                <div class="card-img">
-                    <img class="p-3" src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="">
-                </div>
-            </div>
+            </div> --}}
     
         </div>
     
