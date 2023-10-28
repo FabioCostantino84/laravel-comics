@@ -21,14 +21,7 @@
     
     @include('partials.jumbotron')
 
-    {{-- @include('partials.jumbotron') --}}
-
-
-    <main>
-        {{-- @yield('content') --}}
-
-
-    </main>
+    @include('partials.main')
 
     @include('partials.footer')
 
