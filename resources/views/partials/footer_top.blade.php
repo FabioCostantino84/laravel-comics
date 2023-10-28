@@ -60,7 +60,7 @@
 <style>
     
     .f_container {
-        background-image: url(../assets/img/footer-bg.jpg);
+        background-image: url({{ Vite::asset('resources/img/footer-bg.jpg') }});
     }
     
     
