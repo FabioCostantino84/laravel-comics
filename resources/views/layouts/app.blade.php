@@ -22,9 +22,11 @@
     @include('partials.jumbotron')
 
     @include('partials.main')
-
+    
+    @include('partials.main_menu')
+    
     @include('partials.footer')
-
+    
 </body>
 
 </html>
