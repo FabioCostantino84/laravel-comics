@@ -1,12 +1,12 @@
-<div class="container w-75">
+<div class="container">
     <div class="row align-items-center">
-        <div class="col-4">
+        <div class="col-2">
 
             <!-- LOGO -->
-            <img class="p-3" src="{{Vite::asset('resources/img/dc-logo.png')}}" alt="">
+            <img class="p-3" src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="">
 
         </div>
-        <div class="col-8 d-flex justify-content-center">
+        <div class="col-7 d-flex justify-content-center">
 
             <!-- NAVBAR -->
             <nav class="navbar navbar-expand-sm ">
@@ -16,8 +16,8 @@
                     <a class="nav-link active text-uppercase font-weight-bold align-content-center" aria-current="page"
                         href="#">{{ link }}</a> --}}
 
-                    <div class="container">
-                        
+                
+
 
                     <a class="navbar-brand" href="#">COMICS</a>
                     <a class="navbar-brand" href="#">MOVIES</a>
@@ -29,9 +29,20 @@
                     <a class="navbar-brand" href="#">NEWS</a>
                     <a class="navbar-brand" href="#">SHOP</a>
 
-                    </div>
+
+                
             </nav>
 
         </div>
+
+
+        <div class="col-3">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+
+        </div>
+
     </div>
 </div>
