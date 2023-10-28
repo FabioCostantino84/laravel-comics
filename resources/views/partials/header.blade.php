@@ -16,25 +16,17 @@
                     <a class="nav-link active text-uppercase font-weight-bold align-content-center" aria-current="page"
                         href="#">{{ link }}</a> --}}
 
-                
-
-
-                    <a class="navbar-brand" href="#">COMICS</a>
-                    <a class="navbar-brand" href="#">MOVIES</a>
-                    <a class="navbar-brand" href="#">TV</a>
-                    <a class="navbar-brand" href="#">GAMES</a>
-                    <a class="navbar-brand" href="#">COLLECTIBLES</a>
-                    <a class="navbar-brand" href="#">VIDEOS</a>
-                    <a class="navbar-brand" href="#">FANS</a>
-                    <a class="navbar-brand" href="#">NEWS</a>
-                    <a class="navbar-brand" href="#">SHOP</a>
-
-
-                
+                <a class="navbar-brand" href="#">COMICS</a>
+                <a class="navbar-brand" href="#">MOVIES</a>
+                <a class="navbar-brand" href="#">TV</a>
+                <a class="navbar-brand" href="#">GAMES</a>
+                <a class="navbar-brand" href="#">COLLECTIBLES</a>
+                <a class="navbar-brand" href="#">VIDEOS</a>
+                <a class="navbar-brand" href="#">FANS</a>
+                <a class="navbar-brand" href="#">NEWS</a>
+                <a class="navbar-brand" href="#">SHOP</a>
             </nav>
-
         </div>
-
 
         <div class="col-3">
             <form class="d-flex" role="search">
