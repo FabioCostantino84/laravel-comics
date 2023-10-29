@@ -14,5 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('layouts.app');
+    $books = config('comics');
+   // dd($books);
+    return view('layouts.app', compact('books'));
 });
