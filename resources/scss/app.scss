@@ -1,22 +1,186 @@
-$primary-color: #0282f9;
-$black-color: black;
-$white-color: white;
-$secondary-color: #303030;
-
-
+// Importa il framework Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-@import 'partials/header';
+// Definizione delle variabili di colore
+$dc-light: #ffffff;      
+$dc-info: #0282f9;      
+$dc-secondary: #797979;  
+$dc-tertiary: #303030;   
+$dc-dark: #1c1c1c;   
 
-@import 'partials/jumbotron';
+// Regole generali per le intestazioni
+h1, h2, h3, h4, h5, h6 {
+    color: $dc-light;     
+}
 
-@import 'partials/main';
+// Stile per il blocco "additional-sites" nell'header
+.dc-additional-sites {
+    background-color: $dc-info;  
+    color: $dc-light;          
+    font-weight: bold;          
+}
 
-@import 'partials/main_menu';
+// Stile per i link di navigazione nella barra di navigazione
+.navbar-nav a.nav-link {
+    font-weight: bold;               
+    color: $dc-secondary;           
+    border-bottom: 5px solid transparent; 
+}
 
-@import 'partials/footer_top';
+// Stili per lo stato attivo nell'header
+.dc-active, .dc:hover {
+    color: $dc-info !important;               
+    border-bottom: 5px solid $dc-info !important; 
+}
 
-@import 'partials/footer_bottom';
+// Stili per il campo di ricerca
+input#dc-search {
+    font-weight: bold;     
+    color: $dc-secondary;  
+    border: none;           
+    border-radius: 0%;     
+}
 
+// NOT WORKING - Placeholder del campo di ricerca
+input#dc-search::placeholder {
+    text-align: right !important; 
+}
 
+// Stili per il contenitore di ricerca
+.dc-searchContainer {
+    border-bottom: 3px solid $dc-info !important; 
+}
 
+// Stili per il jumbotron
+.dc-jumbotron {
+    height: 400px;                           
+    background-image: url(../img/jumbotron.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    // Stili specifici per il blocco "currentSeries" all'interno del jumbotron
+    .dc-currentSeries {
+        background-color: $dc-info;         
+    }
+}
+
+.dc-currentSeries {
+    background-color: $dc-info;         
+    margin-left: 5rem;                       
+}
+
+// Stili per il contenitore principale
+.dc-mainContainer {
+    background-color: $dc-dark;            
+}
+
+// Stili per il menu
+.dc-menuCont {
+    background-color: $dc-info;             
+}
+
+// Stili per gli elementi del menu
+.dcMenuEl {
+    a {
+        color: $dc-light;                  
+        text-decoration: none;             
+        font-weight: bold;             
+        font-size: small;                 
+
+        // Stili per le immagini nel menu
+        img {
+            height: 45px;                
+        }
+    }
+}
+
+// Stili per il blocco "more"
+.dc-more {
+    background-color: $dc-info;          
+    border-radius: 0%;                       
+    color: $dc-light;                        
+    font-weight: bold;                      
+}
+
+// Stili per le cards
+.dc-card {
+    transition: transform 0.3s ease-in-out;  
+
+    &:hover {
+        transform: scale(1.1);              
+    }
+}
+
+// Stili per il blocco "card"
+.card {
+    .dc-coverContainer {
+        width: 100%;
+        aspect-ratio: 1/1;
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    p {
+        color: $dc-light;                 
+        font-size: 0.7rem;                 
+    }
+}
+
+// Stili per il footer
+.dc-footerCont {
+    background-image: url(../img/footer-bg.jpg);
+    background-size: cover;
+}
+
+// Stili per i link nel footer
+.dc-footerLinks {
+    max-height: 375px;
+
+    // Stili per il logo nel footer
+    .dc-bigLogo {
+        background-image: url(../img/dc-logo-bg.png);
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    // Stili per il contenitore della lista nel footer
+    .dc-listContainer {
+        margin-right: 2rem;
+
+        h5 {
+            font-weight: bold;               
+        }
+
+        // Stili per i link nella lista del footer
+        li a {
+            font-size: medium;                
+            text-decoration: none;            
+            color: $dc-secondary;             
+
+            &:hover {
+                color: $dc-info;               
+            }
+        }
+    }
+}
+
+// Stili per la sezione "contacts" nel footer
+.dc-contacts {
+    padding: 1.5rem 0;                       
+    background-color: $dc-tertiary;        
+
+    // Stili per il pulsante di registrazione
+    .dc-signUpBtn {
+        border: 3px solid $dc-info;          
+        border-radius: 0;                    
+        padding: 0.7rem 0.8rem;              
+        font-weight: bold;                   
+        color: white;                        
+    }
+
+    h4 {
+        color: $dc-info;                     
+        font-weight: bold;                   
+    }
+}
